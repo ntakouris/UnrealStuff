@@ -1,5 +1,4 @@
-#Zark's notes on UE4's C++ stuff that are confusing , lack documentation and proper explanation. Tricks included - Must read
-#for beginners
+#Zark's notes on UE4's C++ stuff that are confusing , lack documentation and proper explanation. Tricks included - Must read for beginners
 
 Tip: Don't change versions while developing/learning. Stuff change and stuff WILL break.
 
