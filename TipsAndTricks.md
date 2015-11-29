@@ -1,4 +1,4 @@
-#Zark's notes on UE4's C++ stuff that are confusing , lack documentation and proper explanation. Tricks included - Must read for beginners
+#Zark's notes on UE4's [C++ oriented] stuff that are confusing , lack documentation and proper explanation. Tricks included - Must read for beginners
 
 Tip: Don't change versions while developing/learning. Stuff change and stuff WILL break.
 
@@ -91,3 +91,5 @@ A delay of 0 (zero) will cause code to execute next frame.
 Don't use default C++ types because their size may vary. Use Unreal's variations instead (e.g. uint32). You can use float though!
 
 Speaking of that, for simplicity reasons, uint8 (Byte) and int32 (Integer) are the only supported int types in blueprints.
+
+Set a rotation of an actor via a forward vector : Use XVector to Rotation
