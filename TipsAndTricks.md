@@ -100,3 +100,5 @@ You will come across lot's of Public and Private folders: Public folder contains
 
 The Developer folder contains modules only for usage at editor, or non-game time.
 The Runtime folder contains modules for usage at runtime (or all the time).
+
+Editor and Developer stuff don't get shipped on a packaged game.
