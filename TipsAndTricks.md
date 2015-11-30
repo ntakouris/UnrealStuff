@@ -95,3 +95,5 @@ Speaking of that, for simplicity reasons, uint8 (Byte) and int32 (Integer) are t
 Set a rotation of an actor via a forward vector : Use XVector to Rotation.
 
 Get control rotation is better, more accurate and more reliable than getting let's say the rotation of the camera.
+
+You will come across lot's of Public and Private folders: Public folder contains the header files (interface) and Private folder contains the cpp files (implementation) for the most part. You can find some header files in the private folder if it is internal to the module or similar.
