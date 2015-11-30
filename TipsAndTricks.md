@@ -92,4 +92,6 @@ Don't use default C++ types because their size may vary. Use Unreal's variations
 
 Speaking of that, for simplicity reasons, uint8 (Byte) and int32 (Integer) are the only supported int types in blueprints.
 
-Set a rotation of an actor via a forward vector : Use XVector to Rotation
+Set a rotation of an actor via a forward vector : Use XVector to Rotation.
+
+Get control rotation is better, more accurate and more reliable than getting let's say the rotation of the camera.
