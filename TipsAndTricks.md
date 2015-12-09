@@ -102,3 +102,5 @@ The Developer folder contains modules only for usage at editor, or non-game time
 The Runtime folder contains modules for usage at runtime (or all the time).
 
 Editor and Developer stuff don't get shipped on a packaged game.
+
+VInterp to Constant node needs a much bigger value of Interp Speed that the VInterp to node. Beware.
