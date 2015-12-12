@@ -106,3 +106,5 @@ Editor and Developer stuff don't get shipped on a packaged game.
 VInterp to Constant node needs a much bigger value of Interp Speed that the VInterp to node. Beware.
 
 If you are using a canvas, a UMG element's screen space position is based on it's anchor point and possible offsets.
+
+If you are messing around with viewport positions, use Mouse Position Scaled by DPI (from PlayerController). The other one behaves stupidly.
