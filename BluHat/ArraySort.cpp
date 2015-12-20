@@ -1,4 +1,3 @@
-
 #include "BluHat.h"
 #include "ArraySort.h"
 #include "Engine.h"
@@ -118,7 +117,7 @@ TArray<UObject*> UArraySort::FilterSmallerEqual(TArray<UObject*> Array, FName Pr
 void UArraySort::SortWithProperty(TArray<UObject*> Array, FName Property)
 {
 	uint32 ArraySize = Array.Num();
-	QuickSort(&Array, 0, ArraySize - 1);
+	QuickSort(Array, Property,0, ArraySize - 1);
 }
 TArray<UObject*> UArraySort::Reverse(TArray<UObject*> Array)
 {
@@ -201,10 +200,10 @@ UProperty* UArraySort::GetProperty(UObject *Object, FName DesiredProperty){
 	}
 	return NULL;*/
 }
-void UArraySort::QuickSort(TArray<UObject*>* Array, FName DesiredProperty, uint32 Left, uint32 Right){
+void UArraySort::QuickSort(TArray<UObject*> Array, FName DesiredProperty, uint32 Left, uint32 Right){
 	uint32 i = Left, j = Right;
-	UObject* Temp;
-	UObject* Pivot = Array[(left + Right) / 2];
+	uint32 PivotIndex = (Left + Right) / 2;
+	UObject* Pivot = Array[PivotIndex];
 
 	while (i <= j) {
 		while (!CompareProperties(Array[i], GetProperty(Array[i], DesiredProperty), Pivot, GetProperty(Pivot, DesiredProperty)))
@@ -215,16 +214,16 @@ void UArraySort::QuickSort(TArray<UObject*>* Array, FName DesiredProperty, uint3
 			/*Temp = arr[i];
 			Array[i] = Array[j];
 			Array[j] = Temp;*/
-			Array->Swap(i, j);
+			Array.Swap(i, j);
 			i++;
 			j--;
 		}
 	};
 
-	if (left < j)
-		QuickSort(Array, Left, j);
-	if (i < right)
-		QuickSort(Array, i, Right);
+	if (Left < j)
+		QuickSort(Array,DesiredProperty, Left, j);
+	if (i < Right)
+		QuickSort(Array,DesiredProperty, i, Right);
 }
 float UArraySort::UPropertyToFloat(UObject* Object , UProperty* Property){
 
