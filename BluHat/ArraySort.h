@@ -1,3 +1,5 @@
+// Fill out your copyright notice in the Description page of Project Settings.
+
 #pragma once
 
 #include "Kismet/BlueprintFunctionLibrary.h"
@@ -62,6 +64,6 @@ private:
 		static float UPropertyToFloat(UObject* Object ,UProperty* Property);
 
 		//Quicksort stuff
-		static void QuickSort(TArray<UObject*>* Array, FName DesiredProperty, uint32 startIndex, uint32 endIndex);
+		static void QuickSort(TArray<UObject*> Array, FName DesiredProperty, uint32 startIndex, uint32 endIndex);
 
 };
