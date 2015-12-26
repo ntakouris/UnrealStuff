@@ -108,3 +108,7 @@ VInterp to Constant node needs a much bigger value of Interp Speed that the VInt
 If you are using a canvas, a UMG element's screen space position is based on it's anchor point and possible offsets.
 
 If you are messing around with viewport positions, use Mouse Position Scaled by DPI (from PlayerController). The other one behaves stupidly.
+
+Apparently there is a "OnLand" event. It also shows you the velocity before the fall (Z != 0). Use this so you don't have to manually track stuff to use with the other collision events.
+
+Recording without a capture card can be tricky. Frames get skipped in the editor to prevent lag and other problems, thus , some stuff tend not to work correctly if your computer is on the lower end. Some keystrokes may not get registered, timelines may behave differently and skip numbers etc...
