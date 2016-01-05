@@ -13,3 +13,4 @@ WebGL
 vecN -> floatN
 fract -> frac
 F these *. / .* for floats seriously
+mix -> lerp
