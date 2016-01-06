@@ -114,3 +114,5 @@ Apparently there is a "OnLand" event. It also shows you the velocity before the 
 Recording without a capture card can be tricky. Frames get skipped in the editor to prevent lag and other problems, thus , some stuff tend not to work correctly if your computer is on the lower end. Some keystrokes may not get registered, timelines may behave differently and skip numbers etc...
 
 Don't confine yourself to only UE4 related sites. For example , the material(shader) editor has got a custom expression node - in which you can code HLSL (or copy it from other sources like shadertoy). It will then allow you to do cooler effects and even cross-compile it so it runs on different platforms!
+
+Destructibles: Damage Threshold: 1 point to resist a fall of 0.24 units.
