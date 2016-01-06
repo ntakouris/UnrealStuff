@@ -6,6 +6,8 @@ Warning: Some stuff may be outdated or already implemented.
 
 # Hint table
 
+I'm using sublime text 3 and you should use it too. Add this https://github.com/noct/sublime-shaders to packages. It's way better than coding in a textbox...
+
 Unreal doesn't care about input data types
 
 WebGL
