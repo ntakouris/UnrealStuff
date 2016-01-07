@@ -116,3 +116,5 @@ Recording without a capture card can be tricky. Frames get skipped in the editor
 Don't confine yourself to only UE4 related sites. For example , the material(shader) editor has got a custom expression node - in which you can code HLSL (or copy it from other sources like shadertoy). It will then allow you to do cooler effects and even cross-compile it so it runs on different platforms!
 
 Destructibles: Damage Threshold: 1 point to resist a fall of 0.24 units.
+
+Regarding landscape materials: you can't have more than 1 layer "chain" (1 big one or many small weight-blended ones). Seriously, it is going to cause stuff. Instead, use the lerp node to blend alpha, height , angle and then do your paint-over layer(s) chain, using the generated one as a base. 
