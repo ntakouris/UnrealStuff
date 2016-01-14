@@ -118,3 +118,7 @@ Don't confine yourself to only UE4 related sites. For example , the material(sha
 Destructibles: Damage Threshold: 1 point to resist a fall of 0.24 units.
 
 Regarding landscape materials: you can't have more than 1 layer "chain" (1 big one or many small weight-blended ones). Seriously, it is going to cause stuff. Instead, use the lerp node to blend alpha, height , angle and then do your paint-over layer(s) chain, using the generated one as a base. 
+
+Whenever you do velocity and movement stuff, always use Linear and Angular damping. Always.
+
+It's considered a good practise (by me, at least) to learn how the engine works, the way-of-doing-things and API via blueprints first due to the error-less nature. After this phase you should probably learn FIRSTLY how to code and SECONDLY how to code inside the engine. It's recommended to code every sample project by yourself.
