@@ -122,3 +122,6 @@ Regarding landscape materials: you can't have more than 1 layer "chain" (1 big o
 Whenever you do velocity and movement stuff, always use Linear and Angular damping. Always.
 
 It's considered a good practise (by me, at least) to learn how the engine works, the way-of-doing-things and API via blueprints first due to the error-less nature. After this phase you should probably learn FIRSTLY how to code and SECONDLY how to code inside the engine. It's recommended to code every sample project by yourself.
+
+BlueprintNativeEvent tagged functions only call the C++ _Implementation part whenever you add a call parent node.
+If you want to force an event to call the C++ method first, make a method that first calls your method and then calls a BlueprintImplementableEvent which users override.
