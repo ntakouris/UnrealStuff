@@ -125,3 +125,5 @@ It's considered a good practise (by me, at least) to learn how the engine works,
 
 BlueprintNativeEvent tagged functions only call the C++ _Implementation part whenever you add a call parent node.
 If you want to force an event to call the C++ method first, make a method that first calls your method and then calls a BlueprintImplementableEvent which users override.
+
+Learn what Remote Events are.
