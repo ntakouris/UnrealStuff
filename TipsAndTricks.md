@@ -127,3 +127,7 @@ BlueprintNativeEvent tagged functions only call the C++ _Implementation part whe
 If you want to force an event to call the C++ method first, make a method that first calls your method and then calls a BlueprintImplementableEvent which users override.
 
 Learn what Remote Events are.
+
+Add torque units are badly calculated and need huge values for an actual result.
+
+Add force to point can be tricky because it also adds torque automagically.
