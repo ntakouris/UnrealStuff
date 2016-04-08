@@ -18,3 +18,5 @@ effect is made.
 
 There are some algorithms that you need to know in order to master shader forgin in Unreal Engine, for example the outline toon shader.
 Another good example is fresnel.
+
+Also, learn how the damn post proccess materials work please...
