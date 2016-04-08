@@ -131,3 +131,5 @@ Learn what Remote Events are.
 Add torque units are badly calculated and need huge values for an actual result.
 
 Add force to point can be tricky because it also adds torque automagically.
+
+Whenever you are using Root Motion, you lose the ability to control rotation while the animation is played. In order to fix that, be sure to use the source version of the engine and at CharacterMovementComponent.cpp line ~1828, you need to call `PhysicsRotation` even if `HasAnimRootMotion` is true. (Credits: dogles) 
